@@ -45,7 +45,7 @@ One or possibly two crates will be promiment in the example [templates](https://
 - HTTP event
     -   [`lambda_http`](focus://4) will be the only crate you use for working with both serde of JSON into your structs and handling events
 - All other events
-    -   [`lambda_runtime`](focus://6) is the runtime crate that allows your main function will use to trigger your handler code.
+    -   [`lambda_runtime`](focus://6) is the runtime crate that your main function will use to trigger your handler code.
     -   [`aws_lambda_events`](focus://7) is a crate the provides struct definition for many of the AWS event payloads.  You will need to enable the features you want such as the below which highlights DynamoDB structs.
 
 <CH.Code>
