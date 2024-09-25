@@ -29,7 +29,7 @@ Synchronous invokes are how services like API Gateway integrate with Lambda. The
 
 ![Lambda asynchronous invocation diagram](/img/async-invokes.png)
 
-Asynchronous invokes are similar to synchronous invokes in that a caller makes a request directly to Lambda. The request is stored on an internal queue within the Lambda service, meaning the caller recives a fast response and can continue doing other work. The Lambda service then works through the internal queue passing requests to your function code, normally in batches.
+Asynchronous invokes are similar to synchronous invokes in that a caller makes a request directly to Lambda. The request is stored on an internal queue within the Lambda service, meaning the caller receives a fast response and can continue doing other work. The Lambda service then works through the internal queue passing requests to your function code, normally in batches.
 
 If your function returns an error, the Lambda service will automatically retry up to a total of 3 invocations. If after the 3rd invocation there is still a failure the message will either be dropped, or routed a dead letter queue.
 
